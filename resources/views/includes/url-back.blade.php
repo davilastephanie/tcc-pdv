@@ -1,0 +1,1 @@
+{{ strstr(url()->previous(), 'search=') ? url()->previous() : $default }}

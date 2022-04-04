@@ -1,0 +1,14 @@
+{
+    "name": "TCC PDV",
+    "short_name": "TCC PDV",
+    "icons": [
+        {
+            "src": "/favicon/android-chrome-48x48.png",
+            "sizes": "48x48",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#321fdb",
+    "background_color": "#321fdb",
+    "display": "standalone"
+}

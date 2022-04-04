@@ -1,0 +1,177 @@
+//
+// PDV
+//
+
+.page-pdv {
+
+  table {
+    margin-bottom: 0;
+  }
+
+  ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .card-pdv {
+    height: calc(100vh - 210px);
+    overflow-y: auto;
+  }
+
+  .div-table-products {
+    background-color: #ebedef;
+    border: 1px solid #d8dbe0;
+
+    height: calc(100vh - 450px);
+    overflow-y: auto;
+
+    .text-product {
+      display: block;
+      color: white;
+      padding: 1px 4px 2px;
+      width: 100%;
+    }
+  }
+
+  .div-table-total {
+    background: white;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+
+    td {
+      padding: 4px 8px;
+      vertical-align: middle;
+    }
+
+    strong {
+      font-size: 18px;
+    }
+  }
+
+  .list-products {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: -10px;
+
+    li {
+      padding: 10px;
+      width: 20%;
+    }
+
+    img {
+      display: block;
+      height: 100%;
+      opacity: 0;
+      width: 100%;
+    }
+
+    .card-product {
+      background-color: #ebedef;
+      border: 1px solid #d8dbe0;
+      cursor: pointer;
+      display: block;
+      padding: 5px;
+    }
+
+    .card-image {
+      background-size: cover;
+      display: inline-block;
+      overflow: hidden;
+    }
+
+    .card-title {
+      display: block;
+      height: 50px;
+      margin: 0;
+      overflow: hidden;
+      padding: 5px 0;
+      width: 100%;
+    }
+  }
+
+  .list-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 0;
+
+    li {
+      width: 30%;
+    }
+
+    button {
+      color: white !important;
+      font-weight: bold;
+      justify-content: center;
+      width: 100%;
+    }
+  }
+
+  .div-search-products {
+    height: calc(100vh - 300px);
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  @media (max-width: 1500px) {
+    .list-products {
+      li {
+        width: 25%;
+      }
+    }
+  }
+
+  @media (max-width: 1400px) {
+    .col-left {
+      flex: 0 0 60%;
+      max-width: 60%;
+    }
+
+    .col-right {
+      flex: 0 0 40%;
+      max-width: 40%;
+    }
+
+    .list-products {
+      li {
+        width: 33.33%;
+      }
+    }
+  }
+
+  @media (max-width: 1300px) {
+    .list-products {
+      li {
+        width: 50%;
+      }
+    }
+  }
+
+  @media (max-width: 1199px) {
+    .col-left {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    .col-right {
+      display: none;
+    }
+
+    .card-pdv {
+      height: auto;
+    }
+
+    .div-table-products {
+      height: auto;
+    }
+
+    .div-table-total {
+      position: static;
+    }
+  }
+
+}
